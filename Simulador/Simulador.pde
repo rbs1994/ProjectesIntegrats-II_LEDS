@@ -1,4 +1,4 @@
-/* Prova Git Hub +/
+/* Prova Git Hub */
 float rotation=0;
 boolean change = false;
 
