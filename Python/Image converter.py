@@ -24,6 +24,7 @@ else:
 
 
 # Creem la nova imatge amb les noves mides
+#new_img = img.resize((int(new_width),int(new_height)))
 new_img = img.resize((int(new_width),int(new_height)))
 new_img.save('new_image.png','png')
 

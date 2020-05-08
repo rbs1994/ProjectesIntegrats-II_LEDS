@@ -1,7 +1,6 @@
 
 // Array 2D amb els Colors de l'Imatge
-color[][] myArray = {{#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95caea, #94c8e8, #94c8e8, #95caea, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95c9e9, #8dbedc, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #8dbedc, #95c9e9, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #9fb1b8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #9fb1b8, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95caea, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #95cae9, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #9fb1b8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #9fb1b8, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95c9e9, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #95c9e9, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #8dbedc, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #8dbedc, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #95caea, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #95caea, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #94c8e8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #94c8e8, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #94c8e8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #94c8e8, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #95caea, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #95caea, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #8dbedc, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #ffffff, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #8dbedc, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95c9e9, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #ffffff, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #95c9e9, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #9fb1b8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #9fb1b8, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95cae9, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #94c9e8, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #9fb1b8, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #9fb1b8, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95c9e9, #8dbedc, #f58227, #f58227, #f58227, #f58227, #f58227, #f58227, #8dbedc, #95c9e9, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #95caea, #94c8e8, #94c8e8, #95caea, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}, {#96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb, #96cbeb}};
-
+color[][] myArray = {{#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcfcfc, #979697, #979797, #fcfcfc, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f2eef3, #1e3f1a, #203b1a, #f2eff3, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #99959a, #0a5706, #164705, #99969a, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fdfcfd, #606860, #3f453f, #d0cdd0, #ffffff, #ffffff, #8a898a, #02a700, #2b7a00, #8a878b, #ffffff, #ffffff, #cfced0, #3f423e, #626560, #fdfdfd, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcf6fc, #2d5f2e, #008a00, #282a28, #d1cdd1, #faf9fa, #3a423b, #08b301, #338301, #3d3d3b, #faf9fa, #d0cfd1, #272828, #255600, #3c4d2e, #fbf9fc, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fcf6fc, #2f592f, #01e401, #009400, #282c28, #bdb1bd, #19611a, #06e100, #44a000, #31471a, #bab6bd, #282928, #2e6000, #499600, #3b4a2f, #fbf9fc, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #fdfcfd, #565456, #00a000, #01f701, #019401, #1b1a1b, #0e590f, #08e701, #48a401, #273d0f, #1a1a1b, #2f6000, #53a501, #326800, #545456, #fdfdfd, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #aba4ac, #006800, #02ee02, #01f101, #039104, #045505, #09e602, #48a401, #1e3604, #305f03, #50a100, #4f9f01, #1e4200, #a9a7ac, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ece9ec, #293f29, #01cc01, #01ec01, #03e303, #069907, #08e102, #47a101, #356406, #4c9702, #4f9e00, #418601, #2e3629, #ebeaec, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #dddedd, #b0adb0, #b4acb4, #483948, #036303, #02ea02, #01e801, #00ea01, #08e001, #46a000, #4f9a00, #4d9b00, #4e9c01, #1f4002, #433e48, #b1afb4, #afaeb0, #dededd, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #8c898c, #004f00, #009500, #059705, #086409, #07aa08, #01ec01, #00e801, #08e001, #46a000, #4e9900, #4f9d00, #3a7107, #234307, #346504, #2e6100, #123000, #8b8a8c, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #bfbcbf, #112c11, #00bb01, #00fc00, #02ee02, #02e402, #01e801, #00e801, #08e001, #46a000, #4e9900, #4d9b00, #4c9801, #509f01, #53a700, #3b7a00, #172110, #bebdbf, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #b3adb3, #152c15, #057105, #00ad00, #03e103, #02dd03, #00e901, #08e101, #46a000, #4e9900, #4a9402, #4c9602, #387200, #274b04, #1a2315, #b1afb3, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #dbd9db, #aca3ac, #323c32, #062306, #06a007, #00f101, #09e203, #47a101, #519f00, #366a05, #0e1806, #343831, #a9a6ac, #dbdadb, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #636163, #007000, #00ea00, #00c600, #0f7b08, #265e08, #408100, #4b9b00, #1f4600, #626163, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #6d726e, #265d26, #286328, #244225, #11460a, #153e09, #2d3725, #3a4f27, #354826, #6f706e, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f9f9f9, #f6f0f6, #f6eff6, #e4dce5, #164311, #1b3c10, #e3dee5, #f4f2f6, #f4f2f6, #f9f9f9, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #f9f9f9, #919191, #919191, #f9f9f9, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}, {#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff}};
 
 // Variables per crear les Elipses i l'Angle
 int a = 0, mw,mm,mn, mh, r =100;
@@ -16,11 +15,22 @@ boolean checkArrayPos = false;
 
 int x,y;
 
+int rectX= 10;
+int rectY = 10; 
+int rectSizeX = 60; 
+int rectSizeY = 20; 
+color rectHighlight, rectColor;
+
+boolean rectOver = false;
 
 void setup() {
   size(800,800);
   background(0);
   noStroke();
+  
+  rectColor = color(#FFFFFF);
+  rectHighlight = color(#D8D8D8);
+  
   mw = width/2;
   mh = height/2;
   mw = width/2+3;
@@ -28,10 +38,21 @@ void setup() {
 }
 
 void draw() {
+  overRect(rectX, rectY, rectSizeX, rectSizeY);
 // Quadrat que es va pintant amb un Alpha reduit per deixar l'estela dels punts anteriors.
-  fill(0,15);
+  fill(0,10);
   rect(0,0,width,height);
-
+  
+   if (rectOver) {
+    fill(rectHighlight);
+  } else {
+    fill(rectColor);
+  }
+  stroke(255);
+  rect(rectX, rectY, rectSizeX, rectSizeY);
+  fill(0);
+  text("Play/Stop", 13, 24);
+noStroke();
 // A cada volta es posem l'angle (a) a 0.  
   if (a == -360){
     a = 0;
@@ -60,7 +81,7 @@ void draw() {
 // Dibuixem el LED, al posar 10 estem dibuixant el LED superior  
   ellipse( mw+sin(radians(a+(360/2)))*10,
            mh+cos(radians(a+(360/2)))*10,
-           10*(r/100),10*(r/100));
+           15,15);
 
 
 // Busquem la X i la Y segons en l'angles que ens trobem (z) i la posicio del LED (1)  
@@ -80,7 +101,7 @@ void draw() {
 // Dibuixem el LED, al posar -10 estem dibuixant el LED inferior   
   ellipse( mw+sin(radians(a+(360/2)))*-10,
            mh+cos(radians(a+(360/2)))*-10,
-           10*(r/100),10*(r/100));
+           15,15);
            
            
 // Aixo es repetiex per tots els LEDS...           
@@ -101,7 +122,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*30,
            mh+cos(radians(a+(360/2)))*30,
-           10*(r/100),10*(r/100));
+           15,15);
 
 
   
@@ -118,7 +139,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-30,
            mh+cos(radians(a+(360/2)))*-30,
-           10*(r/100),10*(r/100));
+           15,15);
 
   
 /********* Leds 3 *************/ 
@@ -136,7 +157,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*50,
            mh+cos(radians(a+(360/2)))*50,
-           10*(r/100),10*(r/100));
+           15,15);
 
 
   
@@ -153,7 +174,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-50,
            mh+cos(radians(a+(360/2)))*-50,
-           10*(r/100),10*(r/100));
+           15,15);
  
   
 /********* Leds 4 *************/ 
@@ -171,7 +192,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*70,
            mh+cos(radians(a+(360/2)))*70,
-           10*(r/100),10*(r/100));
+           15,15);
 
   
   x = GetXAxis(z,4);
@@ -187,7 +208,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-70,
            mh+cos(radians(a+(360/2)))*-70,
-           10*(r/100),10*(r/100));
+           15,15);
  
   
 /********* Leds 5 *************/ 
@@ -205,7 +226,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*90,
            mh+cos(radians(a+(360/2)))*90,
-           10*(r/100),10*(r/100));
+           15,15);
 
   
   x = GetXAxis(z,5);
@@ -221,7 +242,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-90,
            mh+cos(radians(a+(360/2)))*-90,
-           10*(r/100),10*(r/100));
+           15,15);
  
   
 /********* Leds 6 *************/ 
@@ -239,7 +260,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*110,
            mh+cos(radians(a+(360/2)))*110,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,6);
   y = GetYAxis(z,6);
@@ -254,7 +275,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-110,
            mh+cos(radians(a+(360/2)))*-110,
-           10*(r/100),10*(r/100));
+           15,15);
   
   
 /********* Leds 7 *************/ 
@@ -272,7 +293,7 @@ void draw() {
  
   ellipse( mw+sin(radians(a+(360/2)))*130,
            mh+cos(radians(a+(360/2)))*130,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,7);
   y = GetYAxis(z,7);
@@ -287,7 +308,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-130,
            mh+cos(radians(a+(360/2)))*-130,
-           10*(r/100),10*(r/100));
+           15,15);
   
   
 /********* Leds 8 *************/ 
@@ -305,7 +326,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*150,
            mh+cos(radians(a+(360/2)))*150,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,8);
   y = GetYAxis(z,8);
@@ -320,7 +341,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-150,
            mh+cos(radians(a+(360/2)))*-150,
-           10*(r/100),10*(r/100));
+           15,15);
   
   
 /********* Leds 9 *************/ 
@@ -338,7 +359,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*170,
            mh+cos(radians(a+(360/2)))*170,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,9);
   y = GetYAxis(z,9);
@@ -353,7 +374,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-170,
            mh+cos(radians(a+(360/2)))*-170,
-           10*(r/100),10*(r/100));
+           15,15);
   
   
   
@@ -372,7 +393,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*190,
            mh+cos(radians(a+(360/2)))*190,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,10);
   y = GetYAxis(z,10);
@@ -387,7 +408,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-190,
            mh+cos(radians(a+(360/2)))*-190,
-           10*(r/100),10*(r/100));
+           15,15);
 
   
   
@@ -406,7 +427,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*210,
            mh+cos(radians(a+(360/2)))*210,
-           10*(r/100),10*(r/100));
+           15,15);
  
   x = GetXAxis(z,11);
   y = GetYAxis(z,11);
@@ -421,7 +442,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-210,
            mh+cos(radians(a+(360/2)))*-210,
-           10*(r/100),10*(r/100));
+           15,15);
      
   
   
@@ -442,7 +463,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*230,
            mh+cos(radians(a+(360/2)))*230,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,12);
   y = GetYAxis(z,12);
@@ -457,7 +478,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-230,
            mh+cos(radians(a+(360/2)))*-230,
-           10*(r/100),10*(r/100));
+           15,15);
      
   
   
@@ -476,7 +497,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*250,
            mh+cos(radians(a+(360/2)))*250,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,13);
   y = GetYAxis(z,13);
@@ -491,7 +512,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-250,
            mh+cos(radians(a+(360/2)))*-250,
-           10*(r/100),10*(r/100));
+           15,15);
    
  
 /********* Leds 14 *************/ 
@@ -509,7 +530,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*270,
            mh+cos(radians(a+(360/2)))*270,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,14);
   y = GetYAxis(z,14);
@@ -524,7 +545,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-270,
            mh+cos(radians(a+(360/2)))*-270,
-           10*(r/100),10*(r/100));
+           15,15);
  
 /********* Leds 15 *************/ 
   
@@ -541,7 +562,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*290,
            mh+cos(radians(a+(360/2)))*290,
-           10*(r/100),10*(r/100));
+           15,15);
   
   x = GetXAxis(z,15);
   y = GetYAxis(z,15);
@@ -556,7 +577,7 @@ void draw() {
   
   ellipse( mw+sin(radians(a+(360/2)))*-290,
            mh+cos(radians(a+(360/2)))*-290,
-           10*(r/100),10*(r/100));
+           15,15);
                   
 // Incrementar la a ens augmenta la velocitat i amb la a tambe obtenim l'angle
 // en que es troben en cada moment els 15 Leds Superiors.
@@ -572,26 +593,59 @@ void draw() {
 
 // Funcio que calcula la X que hem de buscar en l'array 2D de colors.
 int GetXAxis(int g, int pos){
-  return 15+int(cos(radians(g))*pos)*-1;  
+  int x = 15+round(cos(radians(g))*(pos-1))*-1;
+  
+  if (x > 29){
+    println("X Int:" +x);
+  }
+  
+  return x;  
+  
 }
 
 // Funcio que calcula la X que hem de buscar en l'array 2D de colors.
 int GetYAxis(int g, int pos){
-   return 15+int(sin(radians(g))*pos)*-1;
+  int y = 15+round(sin(radians(g))*(pos-1))*-1;
+  
+  if (y > 29){
+    println("Y Int:" +y);
+  }
+  
+   return y;
 }
 
 // Funcio que revisa que les posicions X i Y obtingudes existeixin dins l'Array 2D,
 // per evitar errors al programa
 void CheckArrayPositions(int XAux, int YAux){
   
-  if ((XAux >= 0) && (XAux < (myArray.length-1))){
-    if ((YAux >= 0) && (YAux < (myArray[XAux].length-1))){
+  if ((XAux >= 0) && (XAux < (myArray.length))){
+    if ((YAux >= 0) && (YAux < (myArray[XAux].length))){
       checkArrayPos = true; 
     }else{
       checkArrayPos = false; 
     }
   }else{
-   checkArrayPos = false; 
+   checkArrayPos = false;
   }
   
+}
+
+
+void overRect(int x, int y, int width, int height)  {
+  if (mouseX >= x && mouseX <= x+width && 
+      mouseY >= y && mouseY <= y+height) {
+    rectOver = true;
+  } else {
+    rectOver = false;
+  }
+}
+
+void mousePressed() {
+  if (rectOver) {
+    if (vel > 0){
+      vel = 0;
+    }else{
+      vel = 5; 
+    }
+  }
 }
