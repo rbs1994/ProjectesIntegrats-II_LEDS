@@ -16,11 +16,11 @@ width, height = img.size
 # i en el mes gran li posem 30 per la nova imatge i per el valor
 # petit fem una regla de 3 per obtenirlo
 if width > height :
-    new_width = 30
-    new_height = int(((height*30)/width))
+    new_width = 100
+    new_height = int(((height*100)/width))
 else:
-    new_height = 30
-    new_width = int(((width*30)/height))
+    new_height = 100
+    new_width = int(((width*100)/height))
 
 
 # Creem la nova imatge amb les noves mides
