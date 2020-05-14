@@ -1,4 +1,4 @@
-class buttonPlay{
+class button{
   color rectColor = color(#FFFFFF);
   color rectHighlight = color(#D8D8D8);
   
@@ -8,15 +8,22 @@ class buttonPlay{
   int sizeY;
   boolean overButton;
   
-  buttonPlay (int x, int y, int sX, int sY){
+  String txt;
+  int txtX;
+  int txtY;
+  
+  button (int x, int y, int sX, int sY, String txt, int txtX, int txtY){
     this.x = x;
     this.y = y;
     this.sizeX = sX;
     this.sizeY = sY;
     this.overButton = false;
+    this.txt = txt;
+    this.txtX = txtX;
+    this.txtY = txtY;
   }
   
-  void printButtonPlay(){
+  void printButton(){
     
     if (overButton) {
       fill(rectHighlight);
@@ -27,11 +34,11 @@ class buttonPlay{
     stroke(255);
     rect(x, y, sizeX, sizeY);
     fill(0);
-    text("Play/Stop", 13, 24);
+    text(this.txt, this.txtX, this.txtY);
     
   }
   
-  void overPlayButton(int Xmouse, int Ymouse)  {
+  void overButton(int Xmouse, int Ymouse)  {
     if (Xmouse >= this.x && Xmouse <= this.x+this.sizeX && 
         Ymouse >= this.y && Ymouse <= this.y+this.sizeY) {
       this.overButton = true;
@@ -46,58 +53,6 @@ class buttonPlay{
     
   }
 }
-
-class buttonSelectFile{
-  color rectColor = color(#FFFFFF);
-  color rectHighlight = color(#D8D8D8);
-  
-  int x;
-  int y;
-  int sizeX;
-  int sizeY;
-  boolean overButton;
-  
-  buttonSelectFile (int x, int y, int sX, int sY){
-    this.x = x;
-    this.y = y;
-    this.sizeX = sX;
-    this.sizeY = sY;
-    this.overButton = false;
-  }
-  
-  void printButtonSelectFile(){
-    
-    if (overButton) {
-      fill(rectHighlight);
-    } else {
-      fill(rectColor);
-    }
-    
-    stroke(255);
-    rect(x, y, sizeX, sizeY);
-    fill(0);
-    text("Change Image", this.x+2, 24);
-    
-  }
-  
-  void overSelectFileButton(int Xmouse, int Ymouse)  {
-    if (Xmouse >= this.x && Xmouse <= this.x+this.sizeX && 
-        Ymouse >= this.y && Ymouse <= this.y+this.sizeY) {
-      this.overButton = true;
-    } else {
-      this.overButton = false;
-    }
-   
-  }
-  
-  boolean getOverButton(){
-    return this.overButton;
-    
-  }
-}
-
-
-
 
 
 class sliderBar{
@@ -133,7 +88,7 @@ class sliderBar{
   
   int getValue(){
     
-    int val = 5;
+    int val = 6;
     return val; 
   }
   
