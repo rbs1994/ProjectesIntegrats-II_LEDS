@@ -1,9 +1,9 @@
-class ImageFuncs{
+class ImageClass{
   
   PImage image; 
   int newWidth, newHeight;
   
-  ImageFuncs(String url){
+  ImageClass(String url){
    image = loadImage(url); 
    resizeImage();
   }

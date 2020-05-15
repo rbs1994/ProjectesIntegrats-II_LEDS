@@ -28,11 +28,11 @@ boolean playing = false;
 button play;
 button selectFile;
 button selectFile2;
+button resetImages;
 sliderBar slider;
-MathFunc math;
 
-ImageFuncs FImage;
-ImageFuncs FImage2;
+ImageClass FImage;
+ImageClass FImage2;
 
 
 
@@ -50,17 +50,17 @@ void setup() {
   
   
   play = new button(10, 10, 60, 20, "Play/Stop", 13,24);
+  resetImages = new button(100, 10, 60, 20, "Reset", 103,24);
   selectFile = new button (600, 10, 100, 20, "Select Image 1", 603, 24);
   selectFile2 = new button (600, 40, 100, 20, "Select Image 2", 603, 54);
   slider = new sliderBar(5, 55, 80, 55, vel);
-  math = new MathFunc();
   vel = slider.getValue();
   
 
 }
 
 void draw() {
-  
+ 
   //Pressed Mouse
   if (mousePressed) {
     println(mouseX);
@@ -76,6 +76,7 @@ void draw() {
   play.overButton(mouseX, mouseY);
   selectFile.overButton(mouseX, mouseY);
   selectFile2.overButton(mouseX, mouseY);
+  resetImages.overButton(mouseX, mouseY);
   
   //Boto PLAY
   play.printButton();
@@ -86,7 +87,7 @@ void draw() {
   if (playing) {  
     // Quadrat que es va pintant amb un Alpha reduit per deixar l'estela dels punts anteriors.
     fill(0,10);
-    rect(0,0,width,height);
+    rect(0,100,width,height-100);
     
     
     // A cada volta es posem l'angle (a) a 0.  
@@ -113,12 +114,12 @@ void draw() {
     for (int i = 1; i <= 15; i=i+1){
     
       // Busquem la X i la Y segons en l'angles que ens trobem (a) i la posicio del LED (1)  
-      x = math.GetXAxis(a,i);
-      y = math.GetYAxis(a,i);
+      x = GetXAxis(a,i);
+      y = GetYAxis(a,i);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D  
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.  
-      if (math.CheckArrayPositions(x,y)){
+      if (CheckArrayPositions(x,y)){
         fill(currentImage[x][y]);
       }else{
         fill(#000000); //Negre
@@ -131,12 +132,12 @@ void draw() {
              
              
       // Busquem la X i la Y segons en l'angles que ens trobem (z) i la posicio del LED (1)  
-      x = math.GetXAxis(z,i);
-      y = math.GetYAxis(z,i);
+      x = GetXAxis(z,i);
+      y = GetYAxis(z,i);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D    
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.    
-      if (math.CheckArrayPositions(x,y)){
+      if (CheckArrayPositions(x,y)){
         fill(currentImage[x][y]);
       }else{
         fill(#000000); //Negre
@@ -161,12 +162,14 @@ void draw() {
   }else{
     selectFile.printButton(); 
     selectFile2.printButton(); 
+    resetImages.printButton();
   }
 }
 
 void mousePressed() {
   if (play.getOverButton()) {
     if (Image1 != null){
+      background(0);
       currentImage = Image1;
       playing = !playing;
     }
@@ -179,13 +182,18 @@ void mousePressed() {
     selectInput("Select a file to process:", "fileSelected2");
   }
   
+  if (resetImages.getOverButton()) {
+    Image1 = null;
+    Image2 = null;
+  }
+  
 }
 
 void fileSelected(File selection) {
   if (selection == null) {
     println("Window was closed or the user hit cancel.");
   } else {
-    FImage = new ImageFuncs(selection.getAbsolutePath());
+    FImage = new ImageClass(selection.getAbsolutePath());
     Image1 = FImage.getImageColors();
   }
 }
@@ -194,7 +202,7 @@ void fileSelected2(File selection) {
   if (selection == null) {
     println("Window was closed or the user hit cancel.");
   } else {
-    FImage2 = new ImageFuncs(selection.getAbsolutePath());
+    FImage2 = new ImageClass(selection.getAbsolutePath());
     Image2 = FImage2.getImageColors();
   }
 }
