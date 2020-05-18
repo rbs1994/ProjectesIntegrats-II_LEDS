@@ -17,7 +17,7 @@ int vel;  // Valors possibles: 1,2,3,4,5,6,9,10,12,15
 // Boolea que ens indica si els valors X i Y estan dins el nostre Array 2D
 boolean checkArrayPos = false;
 
-int x,y;
+float x,y;
 
 int superior, inferior;
 
@@ -31,21 +31,22 @@ button selectFile2;
 button resetImages;
 sliderBar slider;
 
+textGUI ledText;
+textGUI simulatorText;
+
 ImageClass FImage;
 ImageClass FImage2;
 
 
 
 void setup() {
-  size(800,800);
+  size(800,780);
   background(0);
   noStroke();
   
   
   mw = width/2;
   mh = height/2;
-  mw = width/2+3;
-  mh = height/2+3;
   
   
   
@@ -53,6 +54,10 @@ void setup() {
   resetImages = new button(100, 10, 60, 20, "Reset", 103,24);
   selectFile = new button (600, 10, 100, 20, "Select Image 1", 603, 24);
   selectFile2 = new button (600, 40, 100, 20, "Select Image 2", 603, 54);
+  
+  ledText = new textGUI (10,750,"Drawing Leds");
+  simulatorText = new textGUI (650,750,"Simulator");
+  
   slider = new sliderBar(5, 55, 80, 55, vel);
   vel = slider.getValue();
   
@@ -64,15 +69,13 @@ void draw() {
   //Pressed Mouse
   if (mousePressed) {
     println(mouseX);
-    //if(slider.overSlider(mouseX, mouseY)){
       if(mouseX < 5){
         slider.setBarPos(5);
       }else{
         slider.setBarPos(mouseX);
       }
-      
-    //}
   }
+  
   play.overButton(mouseX, mouseY);
   selectFile.overButton(mouseX, mouseY);
   selectFile2.overButton(mouseX, mouseY);
@@ -81,13 +84,17 @@ void draw() {
   //Boto PLAY
   play.printButton();
   
+  //Texts
+  ledText.printText();
+  simulatorText.printText();
   
+  //Slider
   slider.printSliderBar();
   
   if (playing) {  
-    // Quadrat que es va pintant amb un Alpha reduit per deixar l'estela dels punts anteriors.
+    // Rodona que es va pintant amb un Alpha reduit per deixar l'estela dels punts anteriors.
     fill(0,10);
-    rect(0,100,width,height-100);
+    ellipse(mw, mh, 600, 600);
     
     
     // A cada volta es posem l'angle (a) a 0.  
@@ -111,19 +118,26 @@ void draw() {
     superior = 10;
     inferior = -10;
   
-    for (int i = 1; i <= 15; i=i+1){
+    for (int i = 0; i <= 14; i=i+1){
     
       // Busquem la X i la Y segons en l'angles que ens trobem (a) i la posicio del LED (1)  
-      x = GetXAxis(a,i);
-      y = GetYAxis(a,i);
+      x = GetXAxis(a,i, 15);
+      y = GetYAxis(a,i, 15);
+      
+      println("X: " + x + " Y: "+y);
+      
+      
+      int xAux = round(100*x);
+      int yAux = round(100*y);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D  
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.  
-      if (CheckArrayPositions(x,y)){
-        fill(currentImage[x][y]);
+      if (CheckArrayPositions(xAux,yAux)){
+        fill(currentImage[xAux][yAux]);
       }else{
         fill(#000000); //Negre
       }
+      
   
       // Dibuixem el LED, al posar 10 estem dibuixant el LED superior  
       ellipse( mw+sin(radians(a+(360/2)))*superior,
@@ -132,13 +146,16 @@ void draw() {
              
              
       // Busquem la X i la Y segons en l'angles que ens trobem (z) i la posicio del LED (1)  
-      x = GetXAxis(z,i);
-      y = GetYAxis(z,i);
+      x = GetXAxis(z,i, 15);
+      y = GetYAxis(z,i, 15);
+      
+      xAux = round(100*x);
+      yAux = round(100*y);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D    
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.    
-      if (CheckArrayPositions(x,y)){
-        fill(currentImage[x][y]);
+      if (CheckArrayPositions(xAux,yAux)){
+        fill(currentImage[xAux][yAux]);
       }else{
         fill(#000000); //Negre
       }

@@ -30,7 +30,7 @@ class button{
     } else {
       fill(rectColor);
     }
-    
+    textSize(12); 
     stroke(255);
     rect(x, y, sizeX, sizeY);
     fill(0);
@@ -53,6 +53,29 @@ class button{
     
   }
 }
+
+
+
+class textGUI{  
+  int x;
+  int y;
+  
+  String txt;
+  
+  textGUI (int x, int y, String txt){
+    this.x = x;
+    this.y = y;
+    this.txt = txt;
+  }
+  
+  void printText(){
+    fill(#FFFFFF);
+    textSize(26); 
+    text(this.txt, this.x, this.y);
+    
+  }
+}
+
 
 
 class sliderBar{
