@@ -19,20 +19,23 @@ class ImageClass{
     }
     
     this.image.resize(newWidth, newHeight);
+    
+    println("resizeImage");
   }
   
   
   color[][] getImageColors(){
-    
+    println("getImageColors");
     color [][] colorsArray = new color[newWidth][newHeight]; 
     
     for (int y = 0; y < newHeight; y = y+1){
       for (int x = 0; x < newWidth; x = x+1){
+        println("X: "+x+" Y: "+y);
          colorsArray[y][x] = image.get(x,y);
       }
       
     }
-    
+    println("getImageColors 2");
     
     
     return colorsArray;

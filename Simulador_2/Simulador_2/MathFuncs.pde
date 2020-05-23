@@ -4,7 +4,6 @@ float GetXAxis(int g, int pos, int numLeds){
  // int posAux = ((100*(pos))/30);
   //int x = 50+round(cos(radians(g))*(posAux-1))*-1;
   float x = (-1)*(r*cos(radians(g))) / 2;
-  println("X r:"+ r + "COS: "+cos(radians(g))+" G: "+g);
   return x+0.5;  
   
 }
@@ -21,7 +20,6 @@ float GetYAxis(int g, int pos, int numLeds){
  // int posAux = ((100*(pos))/30);
   //int x = 50+round(cos(radians(g))*(posAux-1))*-1;
   float y = (-1)*(r*sin(radians(g))) / 2;
-  println("Y r:"+ r + "SIN: "+sin(radians(g))+" G: "+g);
    return y+0.5;
 }
 
@@ -38,6 +36,46 @@ boolean CheckArrayPositions(int XAux, int YAux){
     }
   }else{
    return false;
+  }
+  
+}
+
+int getNumLeds(int sliderVal){
+  
+  if (sliderVal < 20){
+    return 15;
+  }
+  else if(sliderVal >= 20 && sliderVal < 40 ){
+    return 20;
+  }
+  else if(sliderVal >= 40 && sliderVal < 60 ){
+    return 30;
+  }else{
+    return 40;
+  }
+  
+}
+
+int getDegrees(int sliderVal){
+  
+  if (sliderVal < 10){
+    return 1;
+  }
+  else if(sliderVal >= 10 && sliderVal < 20 ){
+    return 2;
+  }
+  else if(sliderVal >= 20 && sliderVal < 30 ){
+    return 3;
+  }else if(sliderVal >= 30 && sliderVal < 40 ){
+    return 4;
+  }else if(sliderVal >= 40 && sliderVal < 50 ){
+    return 5;
+  }else if(sliderVal >= 50 && sliderVal < 60 ){
+    return 6;
+  }else if(sliderVal >= 60 && sliderVal < 70 ){
+    return 9;
+  }else{
+    return 10;
   }
   
 }
