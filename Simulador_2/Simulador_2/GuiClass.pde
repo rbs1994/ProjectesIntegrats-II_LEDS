@@ -111,7 +111,7 @@ class sliderBar{
   void printSliderBar(int val){
     noStroke();
     fill(#000000);
-    rect(l1X-5, l1Y-5, (l2X-l1X) + 80, this.sizeY+2);
+    rect(l1X-5, l1Y-5, (l2X-l1X) + 90, this.sizeY+2);
     stroke(50);
     fill(#FFFFFF);
     line(l1X, l1Y, l2X, l2Y);

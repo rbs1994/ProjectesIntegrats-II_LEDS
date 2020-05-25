@@ -79,3 +79,51 @@ int getDegrees(int sliderVal){
   }
   
 }
+
+int getVelocity(int sliderVal){
+  
+  if (sliderVal < 10){
+    return 10;
+  }
+  else if(sliderVal >= 10 && sliderVal < 20 ){
+    return 30;
+  }
+  else if(sliderVal >= 20 && sliderVal < 30 ){
+    return 50;
+  }else if(sliderVal >= 30 && sliderVal < 40 ){
+    return 70;
+  }else if(sliderVal >= 40 && sliderVal < 50 ){
+    return 90;
+  }else if(sliderVal >= 50 && sliderVal < 60 ){
+    return 120;
+  }else if(sliderVal >= 60 && sliderVal < 70 ){
+    return 150;
+  }else{
+    return 180;
+  }
+  
+}
+
+int getEffect(int sliderVal){
+  
+  if (sliderVal < 10){
+    return 0;
+  }
+  else if(sliderVal >= 10 && sliderVal < 20 ){
+    return 20;
+  }
+  else if(sliderVal >= 20 && sliderVal < 30 ){
+    return 40;
+  }else if(sliderVal >= 30 && sliderVal < 40 ){
+    return 60;
+  }else if(sliderVal >= 40 && sliderVal < 50 ){
+    return 80;
+  }else if(sliderVal >= 50 && sliderVal < 60 ){
+    return 100;
+  }else if(sliderVal >= 60 && sliderVal < 70 ){
+    return 120;
+  }else{
+    return 180;
+  }
+  
+}

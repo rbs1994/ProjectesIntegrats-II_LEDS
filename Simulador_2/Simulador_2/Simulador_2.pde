@@ -33,6 +33,8 @@ int numLeds = 15;
 int radiLed;
 int separacioLeds;
 
+int frameVel;
+
 
 button play;
 button selectFile;
@@ -40,7 +42,7 @@ button selectFile2;
 button selectFile3;
 button selectFile4;
 button resetImages;
-sliderBar slider, sliderLeds, sliderVel;
+sliderBar slider, sliderLeds, sliderVel, sliderFrame;
 
 textGUI ledText;
 textGUI simulatorText;
@@ -80,7 +82,9 @@ void setup() {
   
   vel = getDegrees(sliderVel.getValue());
 
+  sliderFrame = new sliderBar(5, 145, 80, 145, 50, 140, "Velocity");
   
+  frameVel = getVelocity(sliderFrame.getValue());
   
   //radiLed = 15;
   radiLed = round((300 - (5*numLeds-1))/(numLeds));
@@ -92,6 +96,7 @@ void setup() {
 }
 
 void draw() {
+  frameRate(frameVel);
  
   //Pressed Mouse
   if (mousePressed) {
@@ -105,6 +110,10 @@ void draw() {
     
     if (sliderVel.overSlider(mouseX, mouseY)){
         sliderVel.setBarPos(mouseX);
+    }
+    
+    if (sliderFrame.overSlider(mouseX, mouseY)){
+        sliderFrame.setBarPos(mouseX);
     }
   }
   
@@ -129,16 +138,17 @@ void draw() {
   separacioLeds = radiLed+5;
   
   vel = getDegrees(sliderVel.getValue());
-  
+  frameVel = getVelocity(sliderFrame.getValue());
   //Slider
   slider.printSliderBar(0);
   sliderLeds.printSliderBar(numLeds*2);
   sliderVel.printSliderBar(vel);
+  sliderFrame.printSliderBar(frameVel);
   
   
   if (playing) {  
     // Rodona que es va pintant amb un Alpha reduit per deixar l'estela dels punts anteriors.
-    fill(0,slider.getValue());
+    fill(0,getEffect(slider.getValue()));
     ellipse(mw, mh, 610, 610);
     
     
