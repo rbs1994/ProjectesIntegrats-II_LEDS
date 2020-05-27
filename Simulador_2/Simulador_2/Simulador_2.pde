@@ -4,6 +4,8 @@ color [][] Image1;
 color [][] Image2;
 color [][] Image3;
 color [][] Image4;
+color [][] Image5;
+color [][] Image6;
 // Variables per crear les Elipses i l'Angle
 int mw,mm,mn, mh, r =100;
 int a = 0;
@@ -12,10 +14,7 @@ int z = -180;
 //Slider Pos
 int SliderPos = 5;
 
-boolean viewImage1 = true;
-boolean viewImage2 = false;
-boolean viewImage3 = false;
-boolean viewImage4 = false;
+int imatgeActual = 0;
 
 int vel;  // Valors possibles: 1,2,3,4,5,6,9,10,12,15
           // Per detectar la minja volta als 180 i la volta completa als 360.
@@ -41,6 +40,8 @@ button selectFile;
 button selectFile2;
 button selectFile3;
 button selectFile4;
+button selectFile5;
+button selectFile6;
 button resetImages;
 sliderBar slider, sliderLeds, sliderVel, sliderFrame;
 
@@ -48,7 +49,7 @@ textGUI ledText;
 textGUI simulatorText;
 
 
-ImageClass FImage, FImage2, FImage3, FImage4;
+ImageClass FImage, FImage2, FImage3, FImage4, FImage5, FImage6;
 
 
 
@@ -69,6 +70,8 @@ void setup() {
   selectFile2 = new button (600, 40, 100, 20, "Select Image 2", 603, 54);
   selectFile3 = new button (600, 70, 100, 20, "Select Image 3", 603, 84);
   selectFile4 = new button (600, 100, 100, 20, "Select Image 4", 603, 114);
+  selectFile5 = new button (600, 130, 100, 20, "Select Image 5", 603, 144);
+  selectFile6 = new button (600, 160, 100, 20, "Select Image 6", 603, 174);
   
   ledText = new textGUI (10,750,"Drawing Leds");
   simulatorText = new textGUI (650,750,"Simulator");
@@ -122,6 +125,8 @@ void draw() {
   selectFile2.overButton(mouseX, mouseY);
   selectFile3.overButton(mouseX, mouseY);
   selectFile4.overButton(mouseX, mouseY);
+  selectFile5.overButton(mouseX, mouseY);
+  selectFile6.overButton(mouseX, mouseY);
   resetImages.overButton(mouseX, mouseY);
   
   
@@ -152,17 +157,14 @@ void draw() {
     ellipse(mw, mh, 610, 610);
     
     
-    
+    println(a);
     // A cada volta es posem l'angle (a) a 0.  
     if (a == -360){
       a = 0;
-      if (viewImage1) {
-        currentImage = Image1;
-        viewImage1 = false;
-        viewImage2 = true;
-      }
+      
     }else if(a == -180){
       z = 0;
+      changeImage();
     }
   
   
@@ -178,9 +180,6 @@ void draw() {
       // Busquem la X i la Y segons en l'angles que ens trobem (a) i la posicio del LED (1)  
       x = GetXAxis(a,i, numLeds);
       y = GetYAxis(a,i, numLeds);
-      
-      
-      
       
       int xAux = round(100*x);
       int yAux = round(100*y);
@@ -236,6 +235,8 @@ void draw() {
     selectFile2.printButton(); 
     selectFile3.printButton(); 
     selectFile4.printButton();
+    selectFile5.printButton();
+    selectFile6.printButton();
     resetImages.printButton();
   }
 }
@@ -246,6 +247,9 @@ void mousePressed() {
       background(0);
       currentImage = Image1;
       playing = !playing;
+      a = 0;
+      imatgeActual = 0;
+      
     }
   }
   if (selectFile.getOverButton()) {
@@ -264,11 +268,21 @@ void mousePressed() {
     selectInput("Select a file to process:", "fileSelected4");
   }
   
+  if (selectFile5.getOverButton()) {
+    selectInput("Select a file to process:", "fileSelected5");
+  }
+  
+  if (selectFile6.getOverButton()) {
+    selectInput("Select a file to process:", "fileSelected6");
+  }
+  
   if (resetImages.getOverButton()) {
     Image1 = null;
     Image2 = null;
     Image3 = null;
     Image4 = null;
+    Image5 = null;
+    Image6 = null;
   }
   
 }
@@ -307,4 +321,71 @@ void fileSelected4(File selection) {
     FImage4 = new ImageClass(selection.getAbsolutePath());
     Image4 = FImage4.getImageColors();
   }
+}
+
+void fileSelected5(File selection) {
+  if (selection == null) {
+    println("Window was closed or the user hit cancel.");
+  } else {
+    FImage5 = new ImageClass(selection.getAbsolutePath());
+    Image5 = FImage5.getImageColors();
+  }
+}
+
+void fileSelected6(File selection) {
+  if (selection == null) {
+    println("Window was closed or the user hit cancel.");
+  } else {
+    FImage6 = new ImageClass(selection.getAbsolutePath());
+    Image6 = FImage6.getImageColors();
+  }
+}
+
+
+void changeImage(){
+boolean imageFound = false;
+  
+  while(!imageFound){
+    
+    if (imatgeActual + 1 == 1){
+      if(Image1 != null){
+         currentImage = Image1;
+         imageFound = true;
+      }
+        imatgeActual = 1;
+    }else if (imatgeActual + 1 == 2){
+      if(Image2 != null){
+         currentImage = Image2;
+         imageFound = true;
+      }
+        imatgeActual = 2;
+    }else if (imatgeActual + 1 == 3){
+      if(Image3 != null){
+         currentImage = Image3;
+         imageFound = true;
+      }
+        imatgeActual = 3;
+    }else if (imatgeActual + 1 == 4){
+      if(Image4 != null){
+         currentImage = Image4;
+         imageFound = true;
+      }
+        imatgeActual = 4;
+    }else if (imatgeActual + 1 == 5){
+      if(Image5 != null){
+         currentImage = Image5;
+         imageFound = true;
+      }
+        imatgeActual = 5;
+    }else if (imatgeActual + 1 == 6){
+      if(Image6 != null){
+         currentImage = Image6;
+         imageFound = true;
+      }
+        imatgeActual = 0;
+    }
+    
+    
+  }
+  
 }

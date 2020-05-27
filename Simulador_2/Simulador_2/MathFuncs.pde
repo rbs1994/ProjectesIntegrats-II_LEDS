@@ -89,17 +89,17 @@ int getVelocity(int sliderVal){
     return 30;
   }
   else if(sliderVal >= 20 && sliderVal < 30 ){
-    return 50;
+    return 60;
   }else if(sliderVal >= 30 && sliderVal < 40 ){
-    return 70;
-  }else if(sliderVal >= 40 && sliderVal < 50 ){
     return 90;
-  }else if(sliderVal >= 50 && sliderVal < 60 ){
+  }else if(sliderVal >= 40 && sliderVal < 50 ){
     return 120;
-  }else if(sliderVal >= 60 && sliderVal < 70 ){
+  }else if(sliderVal >= 50 && sliderVal < 60 ){
     return 150;
-  }else{
+  }else if(sliderVal >= 60 && sliderVal < 70 ){
     return 180;
+  }else{
+    return 210;
   }
   
 }
@@ -110,20 +110,20 @@ int getEffect(int sliderVal){
     return 0;
   }
   else if(sliderVal >= 10 && sliderVal < 20 ){
-    return 20;
+    return 5;
   }
   else if(sliderVal >= 20 && sliderVal < 30 ){
-    return 40;
+    return 10;
   }else if(sliderVal >= 30 && sliderVal < 40 ){
-    return 60;
+    return 15;
   }else if(sliderVal >= 40 && sliderVal < 50 ){
-    return 80;
+    return 20;
   }else if(sliderVal >= 50 && sliderVal < 60 ){
-    return 100;
+    return 25;
   }else if(sliderVal >= 60 && sliderVal < 70 ){
-    return 120;
+    return 30;
   }else{
-    return 180;
+    return 40;
   }
   
 }
