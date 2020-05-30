@@ -1,8 +1,6 @@
 // Funcio que calcula la X que hem de buscar en l'array 2D de colors.
 float GetXAxis(int g, int pos, int numLeds){
   float r = (pos+0.5)/numLeds;
- // int posAux = ((100*(pos))/30);
-  //int x = 50+round(cos(radians(g))*(posAux-1))*-1;
   float x = (-1)*(r*cos(radians(g))) / 2;
   return x+0.5;  
   
@@ -12,13 +10,7 @@ float GetXAxis(int g, int pos, int numLeds){
 
 // Funcio que calcula la X que hem de buscar en l'array 2D de colors.
 float GetYAxis(int g, int pos, int numLeds){
-  
-  //int posAux = ((100*(pos-1))/30);
-  
-  //int y = 50+round(sin(radians(g))*(posAux-1))*-1;
   float r = (pos+0.5)/numLeds;
- // int posAux = ((100*(pos))/30);
-  //int x = 50+round(cos(radians(g))*(posAux-1))*-1;
   float y = (-1)*(r*sin(radians(g))) / 2;
    return y+0.5;
 }

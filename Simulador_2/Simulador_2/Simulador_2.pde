@@ -16,6 +16,8 @@ int SliderPos = 5;
 
 int imatgeActual = 0;
 
+int imageSizeX, imageSizeY;
+
 int vel;  // Valors possibles: 1,2,3,4,5,6,9,10,12,15
           // Per detectar la minja volta als 180 i la volta completa als 360.
 
@@ -156,8 +158,6 @@ void draw() {
     fill(0,getEffect(slider.getValue()));
     ellipse(mw, mh, 610, 610);
     
-    
-    println(a);
     // A cada volta es posem l'angle (a) a 0.  
     if (a == -360){
       a = 0;
@@ -170,19 +170,20 @@ void draw() {
   
     superior = 10;
     inferior = -10;
-    //superior = round(10/(numLeds/15));
-    //inferior = round(-10/(numLeds/15));
     
-    
+   
   
     for (int i = 0; i <= numLeds-1; i=i+1){
     
       // Busquem la X i la Y segons en l'angles que ens trobem (a) i la posicio del LED (1)  
       x = GetXAxis(a,i, numLeds);
       y = GetYAxis(a,i, numLeds);
+            
       
-      int xAux = round(100*x);
-      int yAux = round(100*y);
+      imageSizeX = currentImage.length;
+      int xAux = round(imageSizeX*x);
+      imageSizeY = currentImage[imageSizeX-1].length;
+      int yAux = round(imageSizeY*y);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D  
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.  
@@ -203,8 +204,12 @@ void draw() {
       x = GetXAxis(z,i, numLeds);
       y = GetYAxis(z,i, numLeds);
       
-      xAux = round(100*x);
-      yAux = round(100*y);
+      println("Prova");
+      imageSizeX = currentImage.length;
+      println("PROVAAAAAA");
+      xAux = round(imageSizeX*x);
+      imageSizeY = currentImage[imageSizeX-1].length;
+      yAux = round(imageSizeY*y);
     
       // Comprovem que les coordenades obtingudes existeixen dons l'array 2D    
       // Si existeixen les cordenades obtenim el color que correspon a l'array, sino pintem el led negre.    

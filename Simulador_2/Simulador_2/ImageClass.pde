@@ -24,11 +24,16 @@ class ImageClass{
   
   
   color[][] getImageColors(){
-    color [][] colorsArray = new color[newWidth][newHeight]; 
-    
+    color [][] colorsArray = new color[newHeight][newWidth]; 
+    println(newWidth + " "+newHeight);
     for (int y = 0; y < newHeight; y = y+1){
       for (int x = 0; x < newWidth; x = x+1){
+        try{
          colorsArray[y][x] = image.get(x,y);
+        }catch (ArrayIndexOutOfBoundsException e) {
+          println("Error d'imatge");
+          colorsArray[y][x] = #FFFFFF;
+        }
       }
       
     }
