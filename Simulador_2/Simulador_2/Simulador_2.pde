@@ -6,8 +6,11 @@ color [][] Image3;
 color [][] Image4;
 color [][] Image5;
 color [][] Image6;
+
 // Variables per crear les Elipses i l'Angle
 int mw,mm,mn, mh, r =100;
+
+//Contador de l'angle en el que ens trobem
 int a = 0;
 int z = -180;
 
@@ -204,9 +207,7 @@ void draw() {
       x = GetXAxis(z,i, numLeds);
       y = GetYAxis(z,i, numLeds);
       
-      println("Prova");
       imageSizeX = currentImage.length;
-      println("PROVAAAAAA");
       xAux = round(imageSizeX*x);
       imageSizeY = currentImage[imageSizeX-1].length;
       yAux = round(imageSizeY*y);
@@ -346,7 +347,7 @@ void fileSelected6(File selection) {
   }
 }
 
-
+//Funcio que s'executa a cada volta dels leds i comprova quina imatge ha de mostrar.
 void changeImage(){
 boolean imageFound = false;
   

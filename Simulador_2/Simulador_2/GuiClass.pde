@@ -1,3 +1,6 @@
+//Trovem diverses classes que ens permeten dibuixar diferents components
+// de l'interficie gràfica.
+
 class button{
   color rectColor = color(#FFFFFF);
   color rectHighlight = color(#D8D8D8);

@@ -32,6 +32,8 @@ boolean CheckArrayPositions(int XAux, int YAux){
   
 }
 
+
+//Segons la posicio de Slider torna un numero de leds.
 int getNumLeds(int sliderVal){
   
   if (sliderVal < 20){
@@ -48,6 +50,7 @@ int getNumLeds(int sliderVal){
   
 }
 
+//Segons la posicio de Slider torna uns graus.
 int getDegrees(int sliderVal){
   
   if (sliderVal < 10){
@@ -72,6 +75,7 @@ int getDegrees(int sliderVal){
   
 }
 
+//Segons la posicio de Slider torna una velocitat.
 int getVelocity(int sliderVal){
   
   if (sliderVal < 10){
@@ -95,6 +99,7 @@ int getVelocity(int sliderVal){
   }
   
 }
+
 
 int getEffect(int sliderVal){
   

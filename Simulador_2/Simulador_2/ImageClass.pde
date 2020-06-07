@@ -1,3 +1,6 @@
+//Classe que carrega l'imatge seleccionada i crea un array bidimensional 
+//amb els colors de cada pixel.
+
 class ImageClass{
   
   PImage image; 
@@ -25,7 +28,6 @@ class ImageClass{
   
   color[][] getImageColors(){
     color [][] colorsArray = new color[newHeight][newWidth]; 
-    println(newWidth + " "+newHeight);
     for (int y = 0; y < newHeight; y = y+1){
       for (int x = 0; x < newWidth; x = x+1){
         try{
